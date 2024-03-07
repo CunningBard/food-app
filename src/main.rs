@@ -3,6 +3,7 @@ extern crate serde;
 
 mod api;
 mod models;
+mod repo;
 
 use axum::{extract::Query, response::Html, routing::get, Router};
 use serde::Deserialize;
