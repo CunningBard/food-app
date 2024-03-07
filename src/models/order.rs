@@ -1,6 +1,9 @@
 use crate::models::ItemID;
 
+#[derive(Debug, Copy, Clone, Deserialize, Serialize)]
 pub struct OrderID(pub u32);
+
+#[derive(Debug, Clone)]
 pub struct Order {
     pub id: OrderID,
     pub user_id: i32,
